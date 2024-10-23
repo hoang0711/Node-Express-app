@@ -30,15 +30,15 @@
 
     <main>
         <section>
-            <h2>Order</h2>
+            <h2>Welcome to the Carry-Out Cuisine Order Simulation. Give it a try!</h2>
             <article>
-                <p>What product would you like to purchase?</p>
+                <p>What entree would you like to order?</p>
 
                 <form action="/purchase" method="post">
 
                     <fieldset>
 
-                        <legend>Tell us about yourself...</legend>
+                        <legend>Please enter your information...</legend>
 
                         <label for="fullname2" class="required" aria-required="true">First and Last Name</label>
                         <input type="text" name="fullname2" id="fullname2" placeholder="First and last name" size="25"
@@ -60,74 +60,74 @@
 
                     <fieldset id="producttable">
 
-                        <legend>Pet Toys and Supplies</legend>
+                        <legend>Selections and Prices</legend>
 
                         <table>
-                            <caption>Only one product can be purchased</caption>
+                            <caption>Select 1 choice of entree for each purchase</caption>
 
                             <thead>
                                 <tr>
-                                    <th>Company</th>
-                                    <th>Product</th>
-                                    <th>Price</th>
+                                    <th>Restaurants</th>
+                                    <th>Entrees</th>
+                                    <th>Prices</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr>
-                                    <td>AGYM</td>
+                                    <td>Italian Eatery</td>
                                     <td>
-                                        <label for="agym">
-                                        <input type="radio" name="petSupply" id="agym" value="Spinning Cat Scratcher Ball" checked>Spinning Cat Scratcher Ball</label>
+                                        <label for="italianeatery">
+                                        <input type="radio" name="entree" id="italianeatery" value="Shrimp Scampi Pasta" checked>Shrimp Scampi Pasta</label>
                                     </td>
-                                    <td>$52.99</td>
+                                    <td>$23.50</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Jasonwell</td>
+                                    <td>Smack Shack</td>
                                     <td>
-                                        <label for="jasonwell">
-                                        <input type="radio" name="petSupply" id="jasonwell" value="Foldable Dog Pool">
-                                        Foldable Dog Pool</label>
+                                        <label for="smackshack">
+                                        <input type="radio" name="entree" id="smackshack" value="Lobster Roll">
+                                        Lobster Roll</label>
                                     </td>
-                                    <td>$27.25</td>
+                                    <td>$32.95</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Expawlorer</td>
+                                    <td>Zen Box</td>
                                     <td>
-                                        <label for="expawlorer">
-                                        <input type="radio" name="petSupply" id="expawlorer" value="Dog Fence Window">
-                                        Dog Fence Window</label>
+                                        <label for="zenbox">
+                                        <input type="radio" name="entree" id="zenbox" value="Tonkotsu Ramen">
+                                        Tonkotsu Ramen</label>
                                     </td>
-                                    <td>$30.50</td>
+                                    <td>$20.15</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Lollimeow</td>
+                                    <td>Firelake Grille</td>
                                     <td>
-                                        <label for="lollimeow">
-                                        <input type="radio" name="petSupply" id="lollimeow" value="Capsule Pet Travel Backpack">
-                                        Capsule Pet Travel Backpack</label>
+                                        <label for="firelakegrille">
+                                        <input type="radio" name="entree" id="firelakegrille" value="Filet Mignon">
+                                        Filet Mignon</label>
                                     </td>
                                     <td>$59.00</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Drool'd</td>
+                                    <td>The Oceanaire</td>
                                     <td>
-                                        <label for="drool">
-                                        <input type="radio" name="petSupply" id="drool" value="Cat Hamster Wheel">
-                                        Cat Hamster Wheel</label>
+                                        <label for="theoceananire">
+                                        <input type="radio" name="entree" id="theoceananire" value="Alaska Halibut">
+                                        Alaska Halibut</label>
                                     </td>
-                                    <td>$349.75</td>
+                                    <td>$45.25</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <label for="quantity">Enter amount between 1 and 50:</label>
+                        <label for="quantity">Enter amount between 1 and 15:</label>
                         <input type="number" name="quantity" id="quantity" placeholder="Quantity"
-                                minlength="3" maxlength="10" min="0" max="50" required>
+                                minlength="3" maxlength="10" min="0" max="15" required>
                         
                         <label for="submitorder">
                             <button type="submit" id="submitorder" name="purchase">Submit Purchase</button>
