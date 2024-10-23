@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bang Hoang</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bang <img src="android-chrome-192x192.png" alt="BH icon"> Hoang
+        </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>
+                A Node app using a Public folder, HTML, CSS and JavaScript
+            </p>
+            <article>
+                <h3>How can I help you?</h3>
+                <p>* Fields must be completed</p>
+                <form action="/information" method="post">
+
+                    <fieldset>
+
+                        <legend>Tell us about yourself...</legend>
+
+                        <label for="fullname" class="required" aria-required="true">First and Last Name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="First and last name" size="50"
+                            maxlength="100" required autofocus>
+
+                        <label for="emailaddress" class="required" aria-required="true">Email</label>
+                        <input type="email" name="emailaddress" id="emailaddress" placeholder="name@oregonstate.edu"
+                            required size="50" maxlength="100" width="20">
+
+                        <label for="messages" class="required" aria-required="true">What would you like to tell us?</label>
+                        <textarea name="messages" id="messages" cols="30" rows="10" minlength="10" maxlength="300" required
+                            placeholder="Please write 300 characters or less..."></textarea>
+
+                        
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Provide your feedback</legend>
+
+                        <label for="process">How did you find out about our website?</label>
+                        <select name="method" id="process">
+                            <option value="OSU Website">OSU Website</option>
+                            <option value="Newsletters">Newsletters</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Students">Students</option>
+                            <option value="Other" selected>Other</option>
+                        </select>
+
+                        <p id="visit1">Is this your first visit to our website?
+                            <label for="yes">
+                                <input type="radio" name="visit" id="yes" value="Yes" checked>
+                                Yes</label>
+
+                            <label for="no">
+                                <input type="radio" name="visit" id="no" value="No">
+                                No</label>
+                        </p>
+
+                        <p id="find">How easy is it to find information on the website?
+                            <label for="veryeasy">
+                                <input type="checkbox" name="rating" id="veryeasy" value="very easy" checked>
+                                Very Easy
+                            </label>
+
+                            <label for="easy">
+                                <input type="checkbox" name="rating" id="easy" value="easy">
+                                Easy
+                            </label>
+
+                            <label for="average">
+                                <input type="checkbox" name="rating" id="average" value="average">
+                                Average
+                            </label>
+
+                            <label for="difficult">
+                                <input type="checkbox" name="rating" id="difficult" value="difficult">
+                                Difficult
+                            </label>
+
+                            <label for="verydifficult">
+                                <input type="checkbox" name="rating" id="verydifficult" value="very difficult">
+                                Very Difficult
+                            </label>
+
+                            <label for="submit">
+                                <button type="submit" id="submit" name="information">Submit information
+                                </button>
+                            </label>
+                        </p>
+
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bang Hoang</p>
+    </footer>
+</body>
+
+</html>

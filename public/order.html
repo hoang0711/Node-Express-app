@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bang Hoang</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bang <img src="android-chrome-192x192.png" alt="BH icon"> Hoang
+        </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Order</h2>
+            <article>
+                <p>What product would you like to purchase?</p>
+
+                <form action="/purchase" method="post">
+
+                    <fieldset>
+
+                        <legend>Tell us about yourself...</legend>
+
+                        <label for="fullname2" class="required" aria-required="true">First and Last Name</label>
+                        <input type="text" name="fullname2" id="fullname2" placeholder="First and last name" size="25"
+                            required autofocus>
+
+                        <label for="emailaddress2" class="required" aria-required="true">Email</label>
+                        <input type="email" name="emailaddress2" id="emailaddress2" placeholder="name@oregonstate.edu"
+                            required size="25">
+                        
+                        <label for="physicaladdress" class="required" aria-required="true">Address</label>
+                        <input type="text" name="physicaladdress" id="physicaladdress" placeholder="street address, city, state, zip"
+                            required size="25">
+
+                        <label for="note" aria-required="true">Extra instructions:</label>
+                        <textarea name="note" id="note" cols="30" rows="10" minlength="10" maxlength="200"
+                            placeholder="Please write 200 characters or less..."></textarea>
+
+                    </fieldset>
+
+                    <fieldset id="producttable">
+
+                        <legend>Pet Toys and Supplies</legend>
+
+                        <table>
+                            <caption>Only one product can be purchased</caption>
+
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>AGYM</td>
+                                    <td>
+                                        <label for="agym">
+                                        <input type="radio" name="petSupply" id="agym" value="Spinning Cat Scratcher Ball" checked>Spinning Cat Scratcher Ball</label>
+                                    </td>
+                                    <td>$52.99</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Jasonwell</td>
+                                    <td>
+                                        <label for="jasonwell">
+                                        <input type="radio" name="petSupply" id="jasonwell" value="Foldable Dog Pool">
+                                        Foldable Dog Pool</label>
+                                    </td>
+                                    <td>$27.25</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Expawlorer</td>
+                                    <td>
+                                        <label for="expawlorer">
+                                        <input type="radio" name="petSupply" id="expawlorer" value="Dog Fence Window">
+                                        Dog Fence Window</label>
+                                    </td>
+                                    <td>$30.50</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lollimeow</td>
+                                    <td>
+                                        <label for="lollimeow">
+                                        <input type="radio" name="petSupply" id="lollimeow" value="Capsule Pet Travel Backpack">
+                                        Capsule Pet Travel Backpack</label>
+                                    </td>
+                                    <td>$59.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Drool'd</td>
+                                    <td>
+                                        <label for="drool">
+                                        <input type="radio" name="petSupply" id="drool" value="Cat Hamster Wheel">
+                                        Cat Hamster Wheel</label>
+                                    </td>
+                                    <td>$349.75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <label for="quantity">Enter amount between 1 and 50:</label>
+                        <input type="number" name="quantity" id="quantity" placeholder="Quantity"
+                                minlength="3" maxlength="10" min="0" max="50" required>
+                        
+                        <label for="submitorder">
+                            <button type="submit" id="submitorder" name="purchase">Submit Purchase</button>
+                        </label>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bang Hoang</p>
+    </footer>
+</body>
+
+</html>

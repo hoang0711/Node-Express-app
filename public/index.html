@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bang Hoang</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bang <img src="android-chrome-192x192.png" alt="BH icon"> Hoang
+        </h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Web Dev Concepts</h2>
+            <nav class="local">
+                <a href="#server">Web Servers</a>
+                <a href="#frontend">Frontend Design</a>
+                <a href="#image">Optimized Images</a>
+                <a href="#favicon">Favicons</a>
+                <a href="#css">CSS</a>
+                <a href="#javascript">JS</a>
+            </nav>
+            <article id="server">
+                <h3>Web Servers</h3>
+                <p>
+                    An <strong>index</strong> homepage is very similar to a main or default page shown by the web server
+                    when the <strong>HTTP</strong> client requests a <strong>URL</strong>. This page can be identified 
+                    as <strong>INDEX.HTML</strong> on an Apache web server (OSU Engineering's server software) or 
+                    <strong>DEFAULT.HTML</strong> on Microsoft's .NET server. Most <strong>GET</strong> requests 
+                    for / will be mapped to the path /INDEX.HTML in the root directory, which leads to the web homepage.
+                </p>
+                <p>
+                    The network tab output screen from the Web Dev browser is showing status codes, port numbers, types,
+                    favicons, and URLs. The file's <strong>request</strong> and <strong>response</strong> headers provide 
+                    more information and details when viewed from the web server versus the local hard drive. For example, 
+                    the response headers from the web server show connection, cache details, cookie, host, and user agent. 
+                    They also include the status, method type (GET), header request data and header response data.
+                </p>
+                <p>
+                    The favicon.ico file showed the status of 200 because the request was successfully processed by the
+                    server, and the response body had needed information.
+                    Meanwhile, the MAIN.CSS and MAIN.JS files both showed the status of 404 (Not Found) because the
+                    index
+                    file only includes html contents.
+                    Therefore, the web server cannot provide the requested resource.
+                </p>
+                <p>
+                    The request URL for web file is https://web.engr.oregonstate.edu/~hoangban/a1-hoangban/ and its
+                    structure is <strong>scheme</strong>, <strong>subdomain</strong>, <strong>host domain</strong>, and 
+                    <strong>resource</strong>, respectively.
+                    The URL <strong>scheme</strong> is HTTPS, which is a secure hypertext transfer protocol that the web client must use
+                    to request the resource.
+                    The <strong>host domain</strong> or server name is oregonstate.edu, which is the website where the
+                    resource is hosted and to which the request must be sent.
+                    The section attached to the front of the domain name is called the <strong>subdomain</strong>, which
+                    is web.engr.
+                    Finally, the <strong>URL resource</strong> is /~hoangban/a1-hoangban/, which is the path name of the
+                    web server that will be executed to provide the requested content.
+                </p>
+            </article>
+            <article id="frontend">
+                <h3>Frontend Design</h3>
+                <p>
+                    Frontend design is the process of creating a friendly user interface and user experience of web
+                    applications.
+                    The purpose is to design the visual elements that users interact with, such as forms, buttons,
+                    navigation, and overall layout.
+                    Key requirements usually involve a consistent, color scheme, a photography, icon, and illustration
+                    scheme.
+                </p>
+                <h4>The five "E"s of Usability in frontend design:</h4>
+                <dl>
+                    <dt><strong>Effective</strong></dt>
+                    <dd>How users can complete their goals with a high degree of accuracy.</dd>
+                    <dt><strong>Efficient</strong></dt>
+                    <dd>
+                        Speed is the main objective in efficiency.
+                        An application is efficient if it helps users perform tasks with the least number of steps.
+                    </dd>
+                    <dt><strong>Easy to navigate</strong></dt>
+                    <dd>
+                        The ease of use in navigation is one of the most important requirements to consider.
+                        Users should be able to understand the platform and locate their objectives quickly on the first
+                        encounter.
+                    </dd>
+                    <dt><strong>Error-free</strong></dt>
+                    <dd>
+                        Users may sometimes experience errors while trying to perform specific tasks.
+                        Learning about users' common errors will prevent future accessibility and availability issues.
+                    </dd>
+                    <dt><strong>Engaging</strong></dt>
+                    <dd>
+                        The application should easily grasp the users' attention if it fits their unique needs.
+                        They will be more likely to come back in the future if they find the product enjoyable and
+                        gratifying to use.
+                    </dd>
+                </dl>
+                <p>
+                    The <strong>header</strong> element represents the banner of a website, and it typically includes
+                    introductory content such as the name, publisher, and marketing slogan.
+                    Developers are encouraged to use minimal space for the header so that the content shows above the
+                    scroll area in the viewport.
+
+                    The <strong>nav</strong> or <strong>navigation</strong> element transitions users from the current
+                    page to other pages.
+                    There are different navigation sets such as search, tools, stories, locations, and legal links.
+
+                    The <strong>main</strong> element consists of stories, galleries or tutorials that convey the
+                    primary content of the application.
+
+                    The <strong>section</strong> element is typically a generic standalone section within an
+                    application.
+                    It is used to create a grouping of related content.
+
+                    The <strong>article</strong> element represents a single specific topic in a document.
+                    Therefore, it is often used inside a section element with a second-level headline.
+
+                    The <strong>aside</strong> element denotes content that is indirectly related to an article.
+                    They are typically presented as sidebars or call-out boxes.
+
+                    The <strong>figure</strong> element is also presented similarly as aside, but also consists of an
+                    image or movie, and the figcaption element provides the description for that media.
+
+                    The <strong>blockquote</strong> element indicates that the quoted text of a paragraph is an extended
+                    quotation.
+                    It can be presented as a quote or a citation for the text.
+
+                    The <strong>footer</strong> element is designed for contact information, legal information, links to
+                    important sources and will typically be found below the main tag.
+
+                    The <strong>div</strong> or <strong>division</strong> element is a generic placeholder for content
+                    that has no effect or style.
+                    It can be used to divide content when no other sensible options of element are left.
+                </p>
+                <h4>Hyperlinks with Anchors:</h4>
+                <ol>
+                    <li>
+                        The <strong>anchor</strong> element creates hyperlinks that connect users from one page to
+                        another. The href attribute will be used to indicate the specific path/URL to the 
+                        <strong>external</strong> content that resides outside the current website.
+                    </li>
+                    <li>
+                        An ID attribute can be used with a hashtag to define the reference for an <strong>internal</strong> 
+                        anchor and enable it to link from one text item to another within the same application.
+                    </li>
+                    <li>
+                        <strong>Navigation</strong> anchors act as decorative button-like anchors that can improve usability by assisting 
+                        users move from page-to-page and to external websites.
+                    </li>
+                </ol>
+            </article>
+            <article id="image">
+                <h3>Optimizing Images</h3>
+                <p>
+                    There are six specifications for optimizing the images of a web application, which include
+                    descriptive file name, small file size, exact dimensions, correct file format, reduced resolution,
+                    and color mode. The file name should provide descriptions of the image in regard to who, what, or
+                    where in order to optimize the search engine. The file sizes and dimensions play a big role in
+                    impacting the load speed. Therefore, images should always be cropped, reduced, and compressed to
+                    accommodate for faster load time. The correct file format also helps the image load correctly.
+                    Online photos are typically JPG while logos and icons are usually GIF. The resolution for images
+                    should be reduced to between 72 and 300+ pixels per inch for proper rendering process. Lastly, the
+                    optimal color mode for PNG, JPG, SVG and WebP files should be RGB.
+                </p>
+                <p>
+                    Photos usually consist of high resolutions, great details and various colors. Therefore, the most
+                    appropriate file formats are JPG and WebP since the photographic images need to be compressed to
+                    reduce the load on the server. On the contrary, PNG, SVG and GIF formats are most suitable for
+                    line art images. The alpha channel that comes with PNG files works best for biomorphic shapes and
+                    solid colors. SVG format produces crisp images and text due to its mathematically-derived graphics.
+                </p>
+            </article>
+            <article id="favicon">
+                <h3>Favicons</h3>
+                <p>
+                    <strong>Favicons</strong> are logos or symbols that represent a company's web application when viewed on a browser
+                    tab, a smartwatch or a cellphone. The symbol is first designed to work best with the resolution on
+                    different devices. It is then saved in GIF, PNG, ICO and SVG formats for testing on various browsers. 
+                    The browser will add the symbol anchor to a bookmark or search engine results list.
+                </p>
+            </article>
+            <article id="css">
+                <h3>CSS</h3>
+                <p>
+                    One of the most important aspects of front end design is to present the document elements properly 
+                    on the web application. This is thanks to the Cascading Style Sheets (CSS) language that redefines 
+                    the basic HTML semantic structure. Its main role is to describe how the contents should be rendered 
+                    on webpages to improve usability, readability and legibility.
+                </p>
+                <h4>There are 5 ways to incorporate styles:</h4>
+                <ul>
+                    <li>
+                        An external file with a .css file extension will contain CSS rules for the HTML elements. That 
+                        stylesheet file is then linked in the global area of the website, and all other pages can be 
+                        styled as long as they are linked to that website.
+                    </li>
+                    <li>
+                        Other than the global .css file, external stylesheets can also be imported in the global stylesheet 
+                        for certain specific components.
+                    </li>
+                    <li>
+                        Styles can be embedded directly in HTML files using a style tag. For instance, styling an h1 can 
+                        be done by first giving it an attribute and value, and then wrapping the h1 within a style tag.
+                    </li>
+                    <li>
+                        The attribute and value can also be used inline within an element tag like h1 to apply styles directly 
+                        in the HTML files.
+                    </li>
+                    <li>
+                        Finally, Document Object Model, or DOM, can be manipulated to incorporate styles within a JavaScript 
+                        file.
+                    </li>
+                </ul>
+            </article>
+            <article id="javascript">
+                <h3>JavaScript</h3>
+                <p>
+                    In JavaScript, the main types of data include <strong>number, Boolean, string, symbol, object,</strong> and 
+                    <strong>special values</strong>. The only number type in JavaScript is a double-precision floating-point number. 
+                    When an expected value is not a number, a special number value NaN will be returned instead. Similarly to most other 
+                    programming languages, Boolean types are <strong>True</strong> and <strong>False</strong>. Strings that closely 
+                    resemble lines of text are typically enclosed in either a single quote or double quote.
+                    <strong>String Literals</strong> are strings that contain only characters, and <strong>Template Literals</strong> 
+                    are strings that also include expressions. Objects are sets of name-value pairs, and their names represent their 
+                    properties. An object's property can be <strong>created, read, updated</strong> and <strong>deleted</strong>. 
+                    Finally, 2 special values <strong>undefined</strong> and <strong>null</strong> will be returned when the expected 
+                    values are absent.
+                </p>
+                <p>
+                    The 4 actions that can be performed on objects are Create, Read, Update and Delete, or also referred to as <strong>CRUD</strong>. 
+                    Objects's properties can be created, read and updated by using the . operator on the variable. The delete operator can 
+                    be used for deleting objects' properties. All property names can be returned by passing them to the Object.keys() method. 
+                    Arrays in JavaScript must have properties in string data type. Therefore, the elements of an array can be accessed by
+                    using square brackets to index them starting from 0. The method Array.isArray() can be used to check if the variable's 
+                    value is an array or not. The push() method is used to add elements at the end of an array. The includes() method can 
+                    be used to check if a value exists in an array or not.
+                </p>
+                <p>
+                    <strong>JSON</strong> is a widely used format that can allow programs to exchange data in different languages. There are 
+                    2 main methods of implementing JSON and they are <strong>JSON.stringify()</strong> and <strong>JSON.parse()</strong>. 
+                    JSON.stringify() can create a JSON string from a JavaScript object, and JSON.parse() can create an object from a JSON string.
+                </p>
+                <p>
+                    Similar to other programming languages, JavaScript also depends on <strong>conditionals</strong> and <strong>loops</strong> 
+                    to make decisions. Conditionals are written using <strong>if</strong> and <strong>switch</strong> statements. The if statements 
+                    will execute if the given code is equal to true. An if-then-else statement can also be used when there are several conditions. 
+                    JavaScript conditions can contain any data type, and any non-Boolean value will be converted to a Boolean value as needed due 
+                    to built-in automatic conversion. <strong>Equality</strong> operators are utilized to compare values in JavaScript. 
+                    "Strict equality" operators === check if 2 operands are strictly equal, and !== can check if they are not strictly equal. 
+                    There are also "loose equality" operators == and != that can check if 2 operands are or are not loosely equal. In addition, 
+                    there are <strong>comparison</strong> operators <, <=, > and >= to further compare values. Operands on both sides must all be 
+                    either string or number type for the operators to work properly.
+                </p>
+                <p>
+                    The 2 primary loops in JavaScript are <strong>while</strong> and <strong>for</strong> loops. In a while loop, the written 
+                    expression will continue to execute until the condition evaluates to false. On the other hand, the for loop has 3 different 
+                    versions, which are <strong>for</strong> loop, <strong>for of</strong> loop and <strong>for in</strong> loop. The basic for loop
+                    executes for each evaluation of the condition and also continues until the condition turns false. The for of loop traverses over 
+                    an iterable value, such as a string or an array. In contrast, the for in loop is used to traverse over the properties of an object.
+                </p>
+                <p>
+                    JavaScript is able to support <strong>object-oriented programming</strong> like several other high-level languages because their 
+                    objects can contain their own <strong>identify, state</strong> and <strong>behavior</strong>. The main difference is objects in 
+                    JavaScript can be created without declaring classes. <strong>Prototypes</strong> are special objects that can store one common 
+                    property for multiple objects, which can be leveraged to create several objects with the same property.
+                </p>
+                <p>
+                    Besides object-oriented programming, JavaScript can also utilize <strong>functional programming</strong>. JavaScript functions 
+                    can be assigned to variables, receive other functions as arguments and return other functions due to their <strong>first-class</strong> 
+                    nature. A function is referred to as a <strong>higher-order</strong> function when it receives another function as an argument. 
+                    The map() function is an example of several built-in higher-order functions in JavaScript.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bang Hoang</p>
+    </footer>
+</body>
+
+</html>
