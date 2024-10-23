@@ -59,9 +59,9 @@ let htmlBottom = `
 
 const basket = require('./products.js').products;
 
-function CompareSupply(petSupply) {
+function CompareSupply(entree) {
     for (const item of basket) {
-        if (item.product === petSupply) {
+        if (item.product === entree) {
             return item;
         }
     }
@@ -70,7 +70,7 @@ function CompareSupply(petSupply) {
 app.post('/purchase', (req, res) => {
     const person = req.body.fullname2;
     const location = req.body.physicaladdress;
-    const chosenItem = CompareSupply(req.body.petSupply);
+    const chosenItem = CompareSupply(req.body.entree);
     const amount = req.body.quantity;
     const itemCost = chosenItem.price;
     const itemInfo = chosenItem.price.toLocaleString('en-US',{style: 'currency',currency: 'USD', minimumFractionDigits: 2});
