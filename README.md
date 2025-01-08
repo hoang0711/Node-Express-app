@@ -155,4 +155,3 @@ You should now be able to access your Node app publicly via HTTPS by going to yo
 - How to deploy the app on an AWS EC2 Instance and configure the security group's inbound rules.
 - Set up and manage a custom domain through Route 53 DNS.
 - How to install and configure a reverse proxy to allow HTTPS access.
-- 
