@@ -146,3 +146,13 @@ To allow this Node app to be accessed over HTTPS with a new Domain name, follow 
 ```
 
 You should now be able to access your Node app publicly via HTTPS by going to your new domain (e.g. https://webapp.banghoang.com).
+
+## Lessons Learned
+
+- How to create a small web application using HTML, CSS, JavaScript and Express framework.
+- Installed Node.js to deploy the app on the local host.
+- First exposure to AWS cloud technologies.
+- How to deploy the app on an AWS EC2 Instance and configure the security group's inbound rules.
+- Set up and manage a custom domain through Route 53 DNS.
+- How to install and configure a reverse proxy to allow HTTPS access.
+- 
